@@ -1,0 +1,27 @@
+rails generate scaffold produto prod_name:string prod_desc:string marca:references prod_peso:float prod_largura:float prod_altura:float prod_compr:float prod_st_ativo:boolean
+
+rails generate scaffold marca marc_nome:string 
+
+rails generate scaffold entrega ent_dia:date ent_hora:time ent_status:boolean cliente:references produto:references entregador:references ent_st_ativo:boolean 
+
+rails generate scaffold entregador entd_nome:string endereco:references entd_cnpj:string entd_cpf:string entd_st_ativo:boolean abrangencia:references 
+
+rails generate scaffold abrangencia abrg_desc:string bairro:references
+
+rails generate scaffold bairro bairro_nome:string bairro_desc:string cidade:references
+
+rails generate scaffold cidade cid_nome:string cid_desc:string estado:references
+
+rails generate scaffold estado est_id:integer est_nome:string est_desc:string pais:references 
+
+rails generate scaffold pais pais_nome:string pais_desc:string
+
+rails generate scaffold endereco end_desc_rua:string bairro:references end_complemento:string
+
+rails generate scaffold balanca bal_cod_Maquina:string bal_st_entrega:boolean cliente:references
+
+rails generate scaffold cliente cliente_nome:string cliente_cpf:string cliente_rg:string endereco:references cliente_ponto_ref:string cliente_desc_localiz:string
+
+https://projfindwater-fabianov2005.c9users.io/rails/info/routes
+
+https://projfindwater-fabianov2005.c9users.io/phpmyadmin 
